@@ -1,0 +1,16 @@
+//
+//  lotteryStaticsProject_PrefixHeader.pch
+//  lotteryStaticsProject
+//
+//  Created by test on 2019/1/24.
+//  Copyright © 2019 HLM. All rights reserved.
+//
+
+#ifndef lotteryStaticsProject_PrefixHeader_pch
+#define lotteryStaticsProject_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "HLMCustomMacro.h"
+
+#endif /* lotteryStaticsProject_PrefixHeader_pch */

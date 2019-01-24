@@ -1,0 +1,45 @@
+PODS:
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - IQKeyboardManager (6.2.0)
+  - MJExtension (3.0.15.1)
+  - WHC_AutoLayoutKit (2.8.4):
+    - WHC_AutoLayoutKit/AutoCellHeight (= 2.8.4)
+    - WHC_AutoLayoutKit/Frame (= 2.8.4)
+    - WHC_AutoLayoutKit/LayoutGuide (= 2.8.4)
+    - WHC_AutoLayoutKit/LayoutView (= 2.8.4)
+    - WHC_AutoLayoutKit/StackView (= 2.8.4)
+    - WHC_AutoLayoutKit/Util (= 2.8.4)
+  - WHC_AutoLayoutKit/AutoCellHeight (2.8.4):
+    - WHC_AutoLayoutKit/LayoutView
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/Frame (2.8.4):
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/LayoutGuide (2.8.4):
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/LayoutView (2.8.4):
+    - WHC_AutoLayoutKit/Util
+  - WHC_AutoLayoutKit/StackView (2.8.4):
+    - WHC_AutoLayoutKit/Frame
+    - WHC_AutoLayoutKit/LayoutView
+  - WHC_AutoLayoutKit/Util (2.8.4)
+  - WMPageController (2.5.2)
+
+DEPENDENCIES:
+  - FMDB
+  - IQKeyboardManager
+  - MJExtension
+  - WHC_AutoLayoutKit
+  - WMPageController
+
+SPEC CHECKSUMS:
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  WHC_AutoLayoutKit: 2f36fa6a92f0f46783486c4dee630aae7e1777bb
+  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
+
+PODFILE CHECKSUM: 4e7d8db50d4d775e81f8c504268857fb5f3e7fdf
+
+COCOAPODS: 1.4.0

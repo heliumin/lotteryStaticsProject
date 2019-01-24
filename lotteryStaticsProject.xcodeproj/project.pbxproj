@@ -15,6 +15,9 @@
 		52C6750F21F99E0D0053A40A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6750E21F99E0D0053A40A /* main.m */; };
 		52C6751921F99E0D0053A40A /* lotteryStaticsProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6751821F99E0D0053A40A /* lotteryStaticsProjectTests.m */; };
 		52C6752421F99E0D0053A40A /* lotteryStaticsProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6752321F99E0D0053A40A /* lotteryStaticsProjectUITests.m */; };
+		5A1A5EC842674A0656C9EE16 /* libPods-lotteryStaticsProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5EE4E992A0374DE2570404 /* libPods-lotteryStaticsProjectTests.a */; };
+		756BEAAC40D47728CB22B427 /* libPods-lotteryStaticsProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F56CAC30F5A04E23FFA83703 /* libPods-lotteryStaticsProjectUITests.a */; };
+		9AD411FF33A63A124C5EA207 /* libPods-lotteryStaticsProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EACD437C83B6FDC913FCB87 /* libPods-lotteryStaticsProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D7EB2147EF154482CDF11F1 /* Pods-lotteryStaticsProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		52C674FC21F99E0C0053A40A /* lotteryStaticsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lotteryStaticsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C674FF21F99E0C0053A40A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52C6750021F99E0C0053A40A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,16 @@
 		52C6751F21F99E0D0053A40A /* lotteryStaticsProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lotteryStaticsProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C6752321F99E0D0053A40A /* lotteryStaticsProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lotteryStaticsProjectUITests.m; sourceTree = "<group>"; };
 		52C6752521F99E0D0053A40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C6753221F9A5A50053A40A /* HLMCustomMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMCustomMacro.h; sourceTree = "<group>"; };
+		52C6753321F9A70D0053A40A /* lotteryStaticsProject_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lotteryStaticsProject_PrefixHeader.pch; sourceTree = "<group>"; };
+		6EACD437C83B6FDC913FCB87 /* libPods-lotteryStaticsProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lotteryStaticsProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5EE4E992A0374DE2570404 /* libPods-lotteryStaticsProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lotteryStaticsProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E3EC830D0160D562860332 /* Pods-lotteryStaticsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject.release.xcconfig"; sourceTree = "<group>"; };
+		B114110F2EBF5BAD1AAE557F /* Pods-lotteryStaticsProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B819FA2EF09B67515555F678 /* Pods-lotteryStaticsProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		CED264E712B531713B21306B /* Pods-lotteryStaticsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject.debug.xcconfig"; sourceTree = "<group>"; };
+		DCFBE81C8887E4D1A9AF72FB /* Pods-lotteryStaticsProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F56CAC30F5A04E23FFA83703 /* libPods-lotteryStaticsProjectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lotteryStaticsProjectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD411FF33A63A124C5EA207 /* libPods-lotteryStaticsProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A1A5EC842674A0656C9EE16 /* libPods-lotteryStaticsProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756BEAAC40D47728CB22B427 /* libPods-lotteryStaticsProjectUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,8 @@
 				52C6751721F99E0D0053A40A /* lotteryStaticsProjectTests */,
 				52C6752221F99E0D0053A40A /* lotteryStaticsProjectUITests */,
 				52C674FD21F99E0C0053A40A /* Products */,
+				7EE12C5060E0E11DB0730BF0 /* Pods */,
+				BD1BB14F58CE800DC50AE737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +120,7 @@
 		52C674FE21F99E0C0053A40A /* lotteryStaticsProject */ = {
 			isa = PBXGroup;
 			children = (
+				52C6753421F9A83C0053A40A /* Home */,
 				52C674FF21F99E0C0053A40A /* AppDelegate.h */,
 				52C6750021F99E0C0053A40A /* AppDelegate.m */,
 				52C6750221F99E0C0053A40A /* ViewController.h */,
@@ -110,6 +130,8 @@
 				52C6750A21F99E0D0053A40A /* LaunchScreen.storyboard */,
 				52C6750D21F99E0D0053A40A /* Info.plist */,
 				52C6750E21F99E0D0053A40A /* main.m */,
+				52C6753321F9A70D0053A40A /* lotteryStaticsProject_PrefixHeader.pch */,
+				52C6753121F9A3EA0053A40A /* Macros */,
 			);
 			path = lotteryStaticsProject;
 			sourceTree = "<group>";
@@ -132,6 +154,68 @@
 			path = lotteryStaticsProjectUITests;
 			sourceTree = "<group>";
 		};
+		52C6753121F9A3EA0053A40A /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				52C6753221F9A5A50053A40A /* HLMCustomMacro.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		52C6753421F9A83C0053A40A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				52C6753621F9A8720053A40A /* C */,
+				52C6753721F9A8720053A40A /* M */,
+				52C6753521F9A8720053A40A /* V */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		52C6753521F9A8720053A40A /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		52C6753621F9A8720053A40A /* C */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		52C6753721F9A8720053A40A /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		7EE12C5060E0E11DB0730BF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CED264E712B531713B21306B /* Pods-lotteryStaticsProject.debug.xcconfig */,
+				A9E3EC830D0160D562860332 /* Pods-lotteryStaticsProject.release.xcconfig */,
+				DCFBE81C8887E4D1A9AF72FB /* Pods-lotteryStaticsProjectTests.debug.xcconfig */,
+				B819FA2EF09B67515555F678 /* Pods-lotteryStaticsProjectTests.release.xcconfig */,
+				B114110F2EBF5BAD1AAE557F /* Pods-lotteryStaticsProjectUITests.debug.xcconfig */,
+				3D7EB2147EF154482CDF11F1 /* Pods-lotteryStaticsProjectUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD1BB14F58CE800DC50AE737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EACD437C83B6FDC913FCB87 /* libPods-lotteryStaticsProject.a */,
+				9A5EE4E992A0374DE2570404 /* libPods-lotteryStaticsProjectTests.a */,
+				F56CAC30F5A04E23FFA83703 /* libPods-lotteryStaticsProjectUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C6752821F99E0D0053A40A /* Build configuration list for PBXNativeTarget "lotteryStaticsProject" */;
 			buildPhases = (
+				F1FEDAE5B26C9339A30F90C1 /* [CP] Check Pods Manifest.lock */,
 				52C674F821F99E0C0053A40A /* Sources */,
 				52C674F921F99E0C0053A40A /* Frameworks */,
 				52C674FA21F99E0C0053A40A /* Resources */,
+				AA52E5B3FA7EFB59B544859A /* [CP] Embed Pods Frameworks */,
+				7751C707287C912122A882A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +243,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C6752B21F99E0D0053A40A /* Build configuration list for PBXNativeTarget "lotteryStaticsProjectTests" */;
 			buildPhases = (
+				20529573F55FF72BC4824F4C /* [CP] Check Pods Manifest.lock */,
 				52C6751021F99E0D0053A40A /* Sources */,
 				52C6751121F99E0D0053A40A /* Frameworks */,
 				52C6751221F99E0D0053A40A /* Resources */,
+				A5B4441239A19C1877794551 /* [CP] Embed Pods Frameworks */,
+				40E862853EF51138A96159B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C6752E21F99E0D0053A40A /* Build configuration list for PBXNativeTarget "lotteryStaticsProjectUITests" */;
 			buildPhases = (
+				C944208138CC6C0CABF44035 /* [CP] Check Pods Manifest.lock */,
 				52C6751B21F99E0D0053A40A /* Sources */,
 				52C6751C21F99E0D0053A40A /* Frameworks */,
 				52C6751D21F99E0D0053A40A /* Resources */,
+				56119558474BCA5D87438001 /* [CP] Embed Pods Frameworks */,
+				829FA7444096E7C3CBED0C5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +349,192 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20529573F55FF72BC4824F4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lotteryStaticsProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40E862853EF51138A96159B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56119558474BCA5D87438001 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7751C707287C912122A882A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		829FA7444096E7C3CBED0C5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5B4441239A19C1877794551 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA52E5B3FA7EFB59B544859A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C944208138CC6C0CABF44035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lotteryStaticsProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1FEDAE5B26C9339A30F90C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lotteryStaticsProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52C674F821F99E0C0053A40A /* Sources */ = {
@@ -433,9 +712,13 @@
 		};
 		52C6752921F99E0D0053A40A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CED264E712B531713B21306B /* Pods-lotteryStaticsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N965Z2D83Z;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = lotteryStaticsProject/lotteryStaticsProject_PrefixHeader.pch;
 				INFOPLIST_FILE = lotteryStaticsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -449,9 +732,13 @@
 		};
 		52C6752A21F99E0D0053A40A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E3EC830D0160D562860332 /* Pods-lotteryStaticsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N965Z2D83Z;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = lotteryStaticsProject/lotteryStaticsProject_PrefixHeader.pch;
 				INFOPLIST_FILE = lotteryStaticsProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,6 +752,7 @@
 		};
 		52C6752C21F99E0D0053A40A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCFBE81C8887E4D1A9AF72FB /* Pods-lotteryStaticsProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +771,7 @@
 		};
 		52C6752D21F99E0D0053A40A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B819FA2EF09B67515555F678 /* Pods-lotteryStaticsProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -501,6 +790,7 @@
 		};
 		52C6752F21F99E0D0053A40A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B114110F2EBF5BAD1AAE557F /* Pods-lotteryStaticsProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = lotteryStaticsProjectUITests/Info.plist;
@@ -518,6 +808,7 @@
 		};
 		52C6753021F99E0D0053A40A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D7EB2147EF154482CDF11F1 /* Pods-lotteryStaticsProjectUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = lotteryStaticsProjectUITests/Info.plist;
