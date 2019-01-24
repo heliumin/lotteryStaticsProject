@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		526DF78E21F9DB1900A97553 /* LotteryRecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526DF78D21F9DB1900A97553 /* LotteryRecord.plist */; };
+		526DF79021F9DBF600A97553 /* WinRord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526DF78F21F9DBF600A97553 /* WinRord.plist */; };
+		526DF79721F9E1C800A97553 /* HLMAddWinRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79521F9E1C800A97553 /* HLMAddWinRecordViewController.m */; };
+		526DF79821F9E1C800A97553 /* HLMAddWinRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526DF79621F9E1C800A97553 /* HLMAddWinRecordViewController.xib */; };
+		526DF79B21F9E7D500A97553 /* HLMAddWinRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79A21F9E7D500A97553 /* HLMAddWinRecordModel.m */; };
 		52C6750121F99E0C0053A40A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6750021F99E0C0053A40A /* AppDelegate.m */; };
 		52C6750421F99E0C0053A40A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6750321F99E0C0053A40A /* ViewController.m */; };
 		52C6750721F99E0C0053A40A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C6750521F99E0C0053A40A /* Main.storyboard */; };
@@ -15,6 +20,15 @@
 		52C6750F21F99E0D0053A40A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6750E21F99E0D0053A40A /* main.m */; };
 		52C6751921F99E0D0053A40A /* lotteryStaticsProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6751821F99E0D0053A40A /* lotteryStaticsProjectTests.m */; };
 		52C6752421F99E0D0053A40A /* lotteryStaticsProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6752321F99E0D0053A40A /* lotteryStaticsProjectUITests.m */; };
+		52C6753B21F9ADFB0053A40A /* HLMWinStatisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6753A21F9ADFB0053A40A /* HLMWinStatisticsTableViewController.m */; };
+		52C6754121F9AE900053A40A /* HLMWinStatisticsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6754021F9AE900053A40A /* HLMWinStatisticsModel.m */; };
+		52C6754721F9B1150053A40A /* HLMLotteryStrategysTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6754621F9B1150053A40A /* HLMLotteryStrategysTableViewController.m */; };
+		52C6754A21F9B12C0053A40A /* HLMLotteryStrategysModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6754921F9B12C0053A40A /* HLMLotteryStrategysModel.m */; };
+		52C6755221F9B7E50053A40A /* LotteryStrategys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52C6755121F9B7E50053A40A /* LotteryStrategys.plist */; };
+		52C6755621F9C0E50053A40A /* HLMWinStatisticsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6755421F9C0E50053A40A /* HLMWinStatisticsTableViewCell.m */; };
+		52C6755721F9C0E50053A40A /* HLMWinStatisticsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C6755521F9C0E50053A40A /* HLMWinStatisticsTableViewCell.xib */; };
+		52C6755B21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6755921F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m */; };
+		52C6755C21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C6755A21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.xib */; };
 		5A1A5EC842674A0656C9EE16 /* libPods-lotteryStaticsProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5EE4E992A0374DE2570404 /* libPods-lotteryStaticsProjectTests.a */; };
 		756BEAAC40D47728CB22B427 /* libPods-lotteryStaticsProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F56CAC30F5A04E23FFA83703 /* libPods-lotteryStaticsProjectUITests.a */; };
 		9AD411FF33A63A124C5EA207 /* libPods-lotteryStaticsProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EACD437C83B6FDC913FCB87 /* libPods-lotteryStaticsProject.a */; };
@@ -39,6 +53,13 @@
 
 /* Begin PBXFileReference section */
 		3D7EB2147EF154482CDF11F1 /* Pods-lotteryStaticsProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		526DF78D21F9DB1900A97553 /* LotteryRecord.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LotteryRecord.plist; sourceTree = "<group>"; };
+		526DF78F21F9DBF600A97553 /* WinRord.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WinRord.plist; sourceTree = "<group>"; };
+		526DF79421F9E1C800A97553 /* HLMAddWinRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMAddWinRecordViewController.h; sourceTree = "<group>"; };
+		526DF79521F9E1C800A97553 /* HLMAddWinRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMAddWinRecordViewController.m; sourceTree = "<group>"; };
+		526DF79621F9E1C800A97553 /* HLMAddWinRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMAddWinRecordViewController.xib; sourceTree = "<group>"; };
+		526DF79921F9E7D500A97553 /* HLMAddWinRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMAddWinRecordModel.h; sourceTree = "<group>"; };
+		526DF79A21F9E7D500A97553 /* HLMAddWinRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMAddWinRecordModel.m; sourceTree = "<group>"; };
 		52C674FC21F99E0C0053A40A /* lotteryStaticsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lotteryStaticsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C674FF21F99E0C0053A40A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52C6750021F99E0C0053A40A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +78,22 @@
 		52C6752521F99E0D0053A40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52C6753221F9A5A50053A40A /* HLMCustomMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMCustomMacro.h; sourceTree = "<group>"; };
 		52C6753321F9A70D0053A40A /* lotteryStaticsProject_PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lotteryStaticsProject_PrefixHeader.pch; sourceTree = "<group>"; };
+		52C6753821F9A94C0053A40A /* HLMThirdPartHeads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMThirdPartHeads.h; sourceTree = "<group>"; };
+		52C6753921F9ADFA0053A40A /* HLMWinStatisticsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMWinStatisticsTableViewController.h; sourceTree = "<group>"; };
+		52C6753A21F9ADFB0053A40A /* HLMWinStatisticsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMWinStatisticsTableViewController.m; sourceTree = "<group>"; };
+		52C6753F21F9AE900053A40A /* HLMWinStatisticsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMWinStatisticsModel.h; sourceTree = "<group>"; };
+		52C6754021F9AE900053A40A /* HLMWinStatisticsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMWinStatisticsModel.m; sourceTree = "<group>"; };
+		52C6754521F9B1150053A40A /* HLMLotteryStrategysTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMLotteryStrategysTableViewController.h; sourceTree = "<group>"; };
+		52C6754621F9B1150053A40A /* HLMLotteryStrategysTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMLotteryStrategysTableViewController.m; sourceTree = "<group>"; };
+		52C6754821F9B12C0053A40A /* HLMLotteryStrategysModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMLotteryStrategysModel.h; sourceTree = "<group>"; };
+		52C6754921F9B12C0053A40A /* HLMLotteryStrategysModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMLotteryStrategysModel.m; sourceTree = "<group>"; };
+		52C6755121F9B7E50053A40A /* LotteryStrategys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LotteryStrategys.plist; sourceTree = "<group>"; };
+		52C6755321F9C0E50053A40A /* HLMWinStatisticsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMWinStatisticsTableViewCell.h; sourceTree = "<group>"; };
+		52C6755421F9C0E50053A40A /* HLMWinStatisticsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMWinStatisticsTableViewCell.m; sourceTree = "<group>"; };
+		52C6755521F9C0E50053A40A /* HLMWinStatisticsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMWinStatisticsTableViewCell.xib; sourceTree = "<group>"; };
+		52C6755821F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMLotteryStrategysTableViewCell.h; sourceTree = "<group>"; };
+		52C6755921F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMLotteryStrategysTableViewCell.m; sourceTree = "<group>"; };
+		52C6755A21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMLotteryStrategysTableViewCell.xib; sourceTree = "<group>"; };
 		6EACD437C83B6FDC913FCB87 /* libPods-lotteryStaticsProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lotteryStaticsProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5EE4E992A0374DE2570404 /* libPods-lotteryStaticsProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lotteryStaticsProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E3EC830D0160D562860332 /* Pods-lotteryStaticsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +168,7 @@
 				52C6750D21F99E0D0053A40A /* Info.plist */,
 				52C6750E21F99E0D0053A40A /* main.m */,
 				52C6753321F9A70D0053A40A /* lotteryStaticsProject_PrefixHeader.pch */,
+				52C6755021F9B7AF0053A40A /* Plists */,
 				52C6753121F9A3EA0053A40A /* Macros */,
 			);
 			path = lotteryStaticsProject;
@@ -158,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				52C6753221F9A5A50053A40A /* HLMCustomMacro.h */,
+				52C6753821F9A94C0053A40A /* HLMThirdPartHeads.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -175,6 +214,12 @@
 		52C6753521F9A8720053A40A /* V */ = {
 			isa = PBXGroup;
 			children = (
+				52C6755321F9C0E50053A40A /* HLMWinStatisticsTableViewCell.h */,
+				52C6755421F9C0E50053A40A /* HLMWinStatisticsTableViewCell.m */,
+				52C6755521F9C0E50053A40A /* HLMWinStatisticsTableViewCell.xib */,
+				52C6755821F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.h */,
+				52C6755921F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m */,
+				52C6755A21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -182,6 +227,13 @@
 		52C6753621F9A8720053A40A /* C */ = {
 			isa = PBXGroup;
 			children = (
+				52C6753921F9ADFA0053A40A /* HLMWinStatisticsTableViewController.h */,
+				52C6753A21F9ADFB0053A40A /* HLMWinStatisticsTableViewController.m */,
+				52C6754521F9B1150053A40A /* HLMLotteryStrategysTableViewController.h */,
+				52C6754621F9B1150053A40A /* HLMLotteryStrategysTableViewController.m */,
+				526DF79421F9E1C800A97553 /* HLMAddWinRecordViewController.h */,
+				526DF79521F9E1C800A97553 /* HLMAddWinRecordViewController.m */,
+				526DF79621F9E1C800A97553 /* HLMAddWinRecordViewController.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -189,8 +241,24 @@
 		52C6753721F9A8720053A40A /* M */ = {
 			isa = PBXGroup;
 			children = (
+				52C6753F21F9AE900053A40A /* HLMWinStatisticsModel.h */,
+				52C6754021F9AE900053A40A /* HLMWinStatisticsModel.m */,
+				52C6754821F9B12C0053A40A /* HLMLotteryStrategysModel.h */,
+				52C6754921F9B12C0053A40A /* HLMLotteryStrategysModel.m */,
+				526DF79921F9E7D500A97553 /* HLMAddWinRecordModel.h */,
+				526DF79A21F9E7D500A97553 /* HLMAddWinRecordModel.m */,
 			);
 			path = M;
+			sourceTree = "<group>";
+		};
+		52C6755021F9B7AF0053A40A /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				52C6755121F9B7E50053A40A /* LotteryStrategys.plist */,
+				526DF78D21F9DB1900A97553 /* LotteryRecord.plist */,
+				526DF78F21F9DBF600A97553 /* WinRord.plist */,
+			);
+			path = Plists;
 			sourceTree = "<group>";
 		};
 		7EE12C5060E0E11DB0730BF0 /* Pods */ = {
@@ -328,8 +396,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C6755C21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.xib in Resources */,
+				526DF78E21F9DB1900A97553 /* LotteryRecord.plist in Resources */,
 				52C6750C21F99E0D0053A40A /* LaunchScreen.storyboard in Resources */,
+				52C6755721F9C0E50053A40A /* HLMWinStatisticsTableViewCell.xib in Resources */,
+				526DF79021F9DBF600A97553 /* WinRord.plist in Resources */,
+				52C6755221F9B7E50053A40A /* LotteryStrategys.plist in Resources */,
 				52C6750921F99E0D0053A40A /* Assets.xcassets in Resources */,
+				526DF79821F9E1C800A97553 /* HLMAddWinRecordViewController.xib in Resources */,
 				52C6750721F99E0C0053A40A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,9 +615,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C6754A21F9B12C0053A40A /* HLMLotteryStrategysModel.m in Sources */,
+				52C6754721F9B1150053A40A /* HLMLotteryStrategysTableViewController.m in Sources */,
+				526DF79721F9E1C800A97553 /* HLMAddWinRecordViewController.m in Sources */,
 				52C6750421F99E0C0053A40A /* ViewController.m in Sources */,
+				526DF79B21F9E7D500A97553 /* HLMAddWinRecordModel.m in Sources */,
+				52C6753B21F9ADFB0053A40A /* HLMWinStatisticsTableViewController.m in Sources */,
 				52C6750F21F99E0D0053A40A /* main.m in Sources */,
+				52C6755B21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m in Sources */,
 				52C6750121F99E0C0053A40A /* AppDelegate.m in Sources */,
+				52C6754121F9AE900053A40A /* HLMWinStatisticsModel.m in Sources */,
+				52C6755621F9C0E50053A40A /* HLMWinStatisticsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

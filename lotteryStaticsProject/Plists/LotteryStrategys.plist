@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>策略1</string>
+		<key>time</key>
+		<string>9:00 - 12:00</string>
+		<key>des</key>
+		<string>从第四期开始，平刷2期（50，50）</string>
+		<key>lotteryStr</key>
+		<string>奖金（45，45）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>策略2</string>
+		<key>time</key>
+		<string>9:00 - 12:00</string>
+		<key>des</key>
+		<string>从第四期开始，平刷3期（50，50，50）</string>
+		<key>lotteryStr</key>
+		<string>奖金（45，45，45）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>策略3</string>
+		<key>time</key>
+		<string>9:00 - 12:00</string>
+		<key>des</key>
+		<string>从第四期开始，翻倍追号2期（50，100）</string>
+		<key>lotteryStr</key>
+		<string>奖金（45，90）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>策略4</string>
+		<key>time</key>
+		<string>9:00 - 12:00</string>
+		<key>des</key>
+		<string>从第四期开始，翻倍追号3期（50，100，200）</string>
+		<key>lotteryStr</key>
+		<string>奖金（45，90，180）</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>策略5</string>
+		<key>time</key>
+		<string>9:00 - 12:00</string>
+		<key>des</key>
+		<string>从第四期开始，翻倍追号4期（50，100，200，400）</string>
+		<key>lotteryStr</key>
+		<string>奖金（45，90，180，360）</string>
+	</dict>
+</array>
+</plist>
