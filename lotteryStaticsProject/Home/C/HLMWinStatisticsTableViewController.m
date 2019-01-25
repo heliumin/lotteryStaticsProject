@@ -80,18 +80,41 @@ static NSString *identifier = @"cell";
     return YES;
 }
 
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath*)indexPath
-{
- 
-     if (editingStyle == UITableViewCellEditingStyleDelete) {
-  
-         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 
-     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-  
-
-     }
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewRowAction *deleteAction = [UITableViewRowAction
+                                          rowActionWithStyle:UITableViewRowActionStyleDestructive
+                                          title:@"删除"
+                                          handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
+                                              
+                                              [self deleteWinRecordAction:indexPath.row];
+                                              
+                                          }];
+    UITableViewRowAction *editAction = [UITableViewRowAction
+                                            rowActionWithStyle:UITableViewRowActionStyleNormal
+                                            title:@"编辑"
+                                            handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath){
+    
+                                                [self updateWinRecordAction:indexPath.row];
+                                                
+                                            }];
+    editAction.backgroundColor = [UIColor grayColor];
+    return @[deleteAction, editAction];
 }
+
+// - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath*)indexPath
+//{
+//
+//     if (editingStyle == UITableViewCellEditingStyleDelete) {
+//
+//         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//
+//     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+//
+//
+//     }
+//}
 
 #pragma mark - Event
 - (void)addWinRecordAction{
@@ -101,17 +124,26 @@ static NSString *identifier = @"cell";
     [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)deleteWinRecordAction{
+- (void)deleteWinRecordAction:(NSInteger)index{
     
-    HLMDeleteWinRecordViewController *vc =[[HLMDeleteWinRecordViewController alloc]init];
-    vc.title = @"删除中奖记录";
-    [self.navigationController pushViewController:vc animated:YES];
+    HLMAddWinRecordModel *model = self.dataArr[index];
+    
+    [[HLMDataBase shareDataBase] deleteWinRecord:model];
+
+    [self loadData];
+    
+//    HLMDeleteWinRecordViewController *vc =[[HLMDeleteWinRecordViewController alloc]init];
+//    vc.title = @"删除中奖记录";
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)updateWinRecordAction{
+- (void)updateWinRecordAction:(NSInteger)index{
+    
+    HLMAddWinRecordModel *model = self.dataArr[index];
     
     HLMEditWinRecordViewController *vc =[[HLMEditWinRecordViewController alloc]init];
     vc.title = @"编辑中奖记录";
+    vc.model = model;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

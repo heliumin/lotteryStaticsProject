@@ -184,8 +184,4 @@
     [HLMNotificationCenter postNotificationName:kInsertModelSuccess object:nil];
 }
 
-- (void)query{
-
-}
-
 @end

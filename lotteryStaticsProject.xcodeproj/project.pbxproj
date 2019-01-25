@@ -37,6 +37,11 @@
 		5A1A5EC842674A0656C9EE16 /* libPods-lotteryStaticsProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5EE4E992A0374DE2570404 /* libPods-lotteryStaticsProjectTests.a */; };
 		756BEAAC40D47728CB22B427 /* libPods-lotteryStaticsProjectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F56CAC30F5A04E23FFA83703 /* libPods-lotteryStaticsProjectUITests.a */; };
 		9AD411FF33A63A124C5EA207 /* libPods-lotteryStaticsProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EACD437C83B6FDC913FCB87 /* libPods-lotteryStaticsProject.a */; };
+		9C58B12421FB66FC00A136D0 /* HLMRewardRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C58B12221FB66FC00A136D0 /* HLMRewardRecordViewController.m */; };
+		9C58B12521FB66FC00A136D0 /* HLMRewardRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C58B12321FB66FC00A136D0 /* HLMRewardRecordViewController.xib */; };
+		9C58B12921FB676300A136D0 /* HLMRewardRecordViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C58B12721FB676300A136D0 /* HLMRewardRecordViewCell.m */; };
+		9C58B12A21FB676300A136D0 /* HLMRewardRecordViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C58B12821FB676300A136D0 /* HLMRewardRecordViewCell.xib */; };
+		9C58B13021FB6A0500A136D0 /* HLMRewardRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C58B12F21FB6A0500A136D0 /* HLMRewardRecordModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +115,14 @@
 		52C6755A21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMLotteryStrategysTableViewCell.xib; sourceTree = "<group>"; };
 		6EACD437C83B6FDC913FCB87 /* libPods-lotteryStaticsProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lotteryStaticsProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5EE4E992A0374DE2570404 /* libPods-lotteryStaticsProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lotteryStaticsProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C58B12121FB66FC00A136D0 /* HLMRewardRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMRewardRecordViewController.h; sourceTree = "<group>"; };
+		9C58B12221FB66FC00A136D0 /* HLMRewardRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMRewardRecordViewController.m; sourceTree = "<group>"; };
+		9C58B12321FB66FC00A136D0 /* HLMRewardRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMRewardRecordViewController.xib; sourceTree = "<group>"; };
+		9C58B12621FB676300A136D0 /* HLMRewardRecordViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMRewardRecordViewCell.h; sourceTree = "<group>"; };
+		9C58B12721FB676300A136D0 /* HLMRewardRecordViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMRewardRecordViewCell.m; sourceTree = "<group>"; };
+		9C58B12821FB676300A136D0 /* HLMRewardRecordViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMRewardRecordViewCell.xib; sourceTree = "<group>"; };
+		9C58B12E21FB6A0500A136D0 /* HLMRewardRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMRewardRecordModel.h; sourceTree = "<group>"; };
+		9C58B12F21FB6A0500A136D0 /* HLMRewardRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMRewardRecordModel.m; sourceTree = "<group>"; };
 		A9E3EC830D0160D562860332 /* Pods-lotteryStaticsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject.release.xcconfig"; sourceTree = "<group>"; };
 		B114110F2EBF5BAD1AAE557F /* Pods-lotteryStaticsProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B819FA2EF09B67515555F678 /* Pods-lotteryStaticsProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +258,9 @@
 				52C6755821F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.h */,
 				52C6755921F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m */,
 				52C6755A21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.xib */,
+				9C58B12621FB676300A136D0 /* HLMRewardRecordViewCell.h */,
+				9C58B12721FB676300A136D0 /* HLMRewardRecordViewCell.m */,
+				9C58B12821FB676300A136D0 /* HLMRewardRecordViewCell.xib */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -265,6 +281,9 @@
 				526DF7A621FB08B200A97553 /* HLMDeleteWinRecordViewController.h */,
 				526DF7A721FB08B200A97553 /* HLMDeleteWinRecordViewController.m */,
 				526DF7A821FB08B200A97553 /* HLMDeleteWinRecordViewController.xib */,
+				9C58B12121FB66FC00A136D0 /* HLMRewardRecordViewController.h */,
+				9C58B12221FB66FC00A136D0 /* HLMRewardRecordViewController.m */,
+				9C58B12321FB66FC00A136D0 /* HLMRewardRecordViewController.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -278,6 +297,8 @@
 				52C6754921F9B12C0053A40A /* HLMLotteryStrategysModel.m */,
 				526DF79921F9E7D500A97553 /* HLMAddWinRecordModel.h */,
 				526DF79A21F9E7D500A97553 /* HLMAddWinRecordModel.m */,
+				9C58B12E21FB6A0500A136D0 /* HLMRewardRecordModel.h */,
+				9C58B12F21FB6A0500A136D0 /* HLMRewardRecordModel.m */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -326,7 +347,6 @@
 				52C674F821F99E0C0053A40A /* Sources */,
 				52C674F921F99E0C0053A40A /* Frameworks */,
 				52C674FA21F99E0C0053A40A /* Resources */,
-				AA52E5B3FA7EFB59B544859A /* [CP] Embed Pods Frameworks */,
 				7751C707287C912122A882A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -346,8 +366,6 @@
 				52C6751021F99E0D0053A40A /* Sources */,
 				52C6751121F99E0D0053A40A /* Frameworks */,
 				52C6751221F99E0D0053A40A /* Resources */,
-				A5B4441239A19C1877794551 /* [CP] Embed Pods Frameworks */,
-				40E862853EF51138A96159B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -367,8 +385,6 @@
 				52C6751B21F99E0D0053A40A /* Sources */,
 				52C6751C21F99E0D0053A40A /* Frameworks */,
 				52C6751D21F99E0D0053A40A /* Resources */,
-				56119558474BCA5D87438001 /* [CP] Embed Pods Frameworks */,
-				829FA7444096E7C3CBED0C5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -436,7 +452,9 @@
 				526DF79021F9DBF600A97553 /* WinRord.plist in Resources */,
 				52C6755221F9B7E50053A40A /* LotteryStrategys.plist in Resources */,
 				52C6750921F99E0D0053A40A /* Assets.xcassets in Resources */,
+				9C58B12A21FB676300A136D0 /* HLMRewardRecordViewCell.xib in Resources */,
 				526DF79821F9E1C800A97553 /* HLMAddWinRecordViewController.xib in Resources */,
+				9C58B12521FB66FC00A136D0 /* HLMRewardRecordViewController.xib in Resources */,
 				52C6750721F99E0C0053A40A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,15 +481,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-lotteryStaticsProjectTests-checkManifestLockResult.txt",
 			);
@@ -480,121 +494,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		40E862853EF51138A96159B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		56119558474BCA5D87438001 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7751C707287C912122A882A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject-resources.sh",
+				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DateTools.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWPhotoBrowser.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		829FA7444096E7C3CBED0C5A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5B4441239A19C1877794551 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA52E5B3FA7EFB59B544859A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C944208138CC6C0CABF44035 /* [CP] Check Pods Manifest.lock */ = {
@@ -602,15 +521,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-lotteryStaticsProjectUITests-checkManifestLockResult.txt",
 			);
@@ -624,15 +539,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-lotteryStaticsProject-checkManifestLockResult.txt",
 			);
@@ -652,12 +563,15 @@
 				52C6754721F9B1150053A40A /* HLMLotteryStrategysTableViewController.m in Sources */,
 				526DF79721F9E1C800A97553 /* HLMAddWinRecordViewController.m in Sources */,
 				52C6750421F99E0C0053A40A /* ViewController.m in Sources */,
+				9C58B12921FB676300A136D0 /* HLMRewardRecordViewCell.m in Sources */,
 				526DF79B21F9E7D500A97553 /* HLMAddWinRecordModel.m in Sources */,
 				52C6753B21F9ADFB0053A40A /* HLMWinStatisticsTableViewController.m in Sources */,
 				526DF7A421FB089B00A97553 /* HLMEditWinRecordViewController.m in Sources */,
 				52C6750F21F99E0D0053A40A /* main.m in Sources */,
+				9C58B13021FB6A0500A136D0 /* HLMRewardRecordModel.m in Sources */,
 				52C6755B21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m in Sources */,
 				526DF7A921FB08B200A97553 /* HLMDeleteWinRecordViewController.m in Sources */,
+				9C58B12421FB66FC00A136D0 /* HLMRewardRecordViewController.m in Sources */,
 				52C6750121F99E0C0053A40A /* AppDelegate.m in Sources */,
 				52C6754121F9AE900053A40A /* HLMWinStatisticsModel.m in Sources */,
 				526DF79F21FAD1F200A97553 /* HLMDataBase.m in Sources */,

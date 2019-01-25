@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HLMWinStatisticsTableViewController.h"
 #import "HLMLotteryStrategysTableViewController.h"
+#import "HLMRewardRecordViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -68,7 +69,8 @@
             break;
         case 1:
         {
-            
+            HLMRewardRecordViewController *vc =[[HLMRewardRecordViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 2:

@@ -12,6 +12,12 @@ target 'lotteryStaticsProject' do
   pod 'WMPageController'
   pod 'MJExtension'
   pod 'WHC_AutoLayoutKit'
+  pod 'MBProgressHUD'
+  pod 'SDWebImage'
+  pod 'AFNetworking'
+  pod 'DateTools'
+  pod 'MWPhotoBrowser'
+  pod 'PDTSimpleCalendar'
 
   target 'lotteryStaticsProjectTests' do
     inherit! :search_paths

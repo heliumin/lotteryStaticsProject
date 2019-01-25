@@ -23,12 +23,13 @@
 
 - (IBAction)deleteBtnAction:(id)sender {
     
-    HLMAddWinRecordModel *model = [[HLMAddWinRecordModel alloc]init];
-    model.timeStr = self.dateTextField.text;
-    
-    [[HLMDataBase shareDataBase] deleteWinRecord:model];
-    
     [HLMNotificationCenter postNotificationName:kDeleteModelSuccess object:nil];
+}
+
+#pragma mark - Setter
+- (void)setModel:(HLMAddWinRecordModel *)model{
+    
+    _model = model;
 }
 
 @end

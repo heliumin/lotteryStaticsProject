@@ -13,8 +13,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLMEditWinRecordViewController">
             <connections>
                 <outlet property="contentTextView1" destination="24f-UY-kj7" id="PU3-W3-Sbb"/>
+                <outlet property="contentTextView2" destination="Izf-2L-K1c" id="Y4B-wt-Fn5"/>
                 <outlet property="contentTextView3" destination="Btv-WK-PUA" id="zVf-Jr-J8c"/>
-                <outlet property="contentView2" destination="Izf-2L-K1c" id="ZYe-1P-ojw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

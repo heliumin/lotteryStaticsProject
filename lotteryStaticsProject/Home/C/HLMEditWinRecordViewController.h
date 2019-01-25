@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HLMAddWinRecordModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HLMEditWinRecordViewController : UIViewController
+
+@property(nonatomic, strong) HLMAddWinRecordModel *model;
 
 @end
 

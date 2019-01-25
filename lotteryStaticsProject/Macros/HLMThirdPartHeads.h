@@ -13,5 +13,6 @@
 #import "MJExtension.h"
 #import "FMDB.h"
 #import "HLMDataBase.h"
+#import "MBProgressHUD.h"
 
 #endif /* HLMThirdPartHeads_h */
