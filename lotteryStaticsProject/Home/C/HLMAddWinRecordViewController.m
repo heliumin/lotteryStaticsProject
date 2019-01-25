@@ -7,7 +7,6 @@
 //
 
 #import "HLMAddWinRecordViewController.h"
-#import "HLMAddWinRecordModel.h"
 
 @interface HLMAddWinRecordViewController ()
 
@@ -26,26 +25,88 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    
-//    @property (nonatomic,copy) NSString *timeStr;
-//    @property (nonatomic, strong) NSArray *data9_10;
-//    @property (nonatomic, strong) NSArray *data10_11;
-//    @property (nonatomic, strong) NSArray *data11_12;
-//    @property (nonatomic,copy) NSString *stragyMoney1;
-//    @property (nonatomic,copy) NSString *stragyMoney2;
-//    @property (nonatomic,copy) NSString *stragyMoney3;
-//    @property (nonatomic,copy) NSString *stragyMoney4;
-//    @property (nonatomic,copy) NSString *stragyMoney5;
 }
 
 - (IBAction)doneAction:(id)sender {
+    
+    [self insert];
+}
 
-    NSMutableDictionary *dataDic =[NSMutableDictionary dictionary];
+- (CGFloat )stragyMoney:(NSMutableArray *)mutArr stragy:(NSInteger)type{
+    
+    CGFloat bonus = 0;
+    for (NSString *str in mutArr) {
+        
+        NSArray *arr =[str componentsSeparatedByString:@"-"];
+        NSString *lastObject = [arr lastObject];
+        NSInteger unWinNum= [lastObject integerValue];
+        
+        CGFloat detailBonus = [self bonus:unWinNum type:type];
+        bonus += detailBonus;
+    }
+    return bonus;
+}
+
+- (CGFloat )bonus:(NSInteger)unWinNum type:(NSInteger)type{
+    
+    CGFloat bonus = 0;
+    if (unWinNum >= 4) {
+        
+        switch (type) {
+            case 1:
+            {
+                CGFloat winBonus = (unWinNum > 5) ? 0 : 95;
+                CGFloat principal = (unWinNum > 5) ? 100: (unWinNum - 3)*50;
+                
+                bonus = winBonus - principal;
+            }
+                break;
+            case 2:
+            {
+                CGFloat winBonus = (unWinNum > 6) ? 0 : 95;
+                CGFloat principal = (unWinNum > 6) ? 150 : (unWinNum - 3)*50;
+                
+                bonus = winBonus - principal;
+            }
+                break;
+            case 3:
+            {
+                CGFloat winBonus = (unWinNum > 5) ? 0 : 95 * (unWinNum - 3);
+                CGFloat principal = (unWinNum > 5) ? 150 : (50 * (pow(2, (unWinNum-3))-1));
+                
+                bonus = winBonus - principal;
+            }
+                break;
+            case 4:
+            {
+                CGFloat winBonus = (unWinNum > 6) ? 0 : 95 * (unWinNum - 3);
+                CGFloat principal = (unWinNum > 6) ? 350 : (50 * (pow(2, (unWinNum-3))-1));
+                
+                bonus = winBonus - principal;
+            }
+                break;
+            case 5:
+            {
+                CGFloat winBonus = (unWinNum > 7) ? 0 : 95 * (unWinNum - 3);
+                CGFloat principal = (unWinNum > 7) ? 750 : (50 * (pow(2, (unWinNum-3))-1));
+                
+                bonus = winBonus - principal;
+            }
+                break;
+            default:
+                break;
+        }
+    }
+    return bonus;
+}
+
+- (void)insert{
     
     NSString *timeStr = self.timeTextField.text;
-    [dataDic setValue:timeStr forKey:@"time"];
     
-    NSArray *arr9_10 =[self.textView9_10.text componentsSeparatedByString:@"\n"];
+    NSString *content9_10 = self.textView9_10.text;
+    
+    NSArray *arr9_10 =[content9_10 componentsSeparatedByString:@"\n"];
     NSMutableArray *mutArr9_10 =[NSMutableArray array];
     if (arr9_10.count > 0) {
         
@@ -56,11 +117,15 @@
             }
         }
     }
-    [dataDic setValue:mutArr9_10 forKey:@"data9_10"];
     
-    [self stragyMoney:mutArr9_10 stragy:1];
+    CGFloat bonus9_10_1 = [self stragyMoney:mutArr9_10 stragy:1];
+    CGFloat bonus9_10_2 = [self stragyMoney:mutArr9_10 stragy:2];
+    CGFloat bonus9_10_3 = [self stragyMoney:mutArr9_10 stragy:3];
+    CGFloat bonus9_10_4 = [self stragyMoney:mutArr9_10 stragy:4];
+    CGFloat bonus9_10_5 = [self stragyMoney:mutArr9_10 stragy:5];
     
-    NSArray *arr10_11 =[self.textView10_11.text componentsSeparatedByString:@"\n"];
+    NSString *content10_11 = self.textView10_11.text;
+    NSArray *arr10_11 =[content10_11 componentsSeparatedByString:@"\n"];
     NSMutableArray *mutArr10_11 =[NSMutableArray array];
     if (arr10_11.count > 0) {
         
@@ -71,8 +136,14 @@
             }
         }
     }
-    [dataDic setValue:mutArr10_11 forKey:@"data10_11"];
     
+    CGFloat bonus10_11_1 = [self stragyMoney:mutArr10_11 stragy:1];
+    CGFloat bonus10_11_2 = [self stragyMoney:mutArr10_11 stragy:2];
+    CGFloat bonus10_11_3 = [self stragyMoney:mutArr10_11 stragy:3];
+    CGFloat bonus10_11_4 = [self stragyMoney:mutArr10_11 stragy:4];
+    CGFloat bonus10_11_5 = [self stragyMoney:mutArr10_11 stragy:5];
+    
+    NSString *content11_12 = self.textView11_12.text;
     NSArray *arr11_12 =[self.textView11_12.text componentsSeparatedByString:@"\n"];
     NSMutableArray *mutArr11_12 =[NSMutableArray array];
     if (arr11_12.count > 0) {
@@ -84,62 +155,37 @@
             }
         }
     }
-    [dataDic setValue:mutArr11_12 forKey:@"data11_12"];
+    
+    CGFloat bonus11_12_1 = [self stragyMoney:mutArr11_12 stragy:1];
+    CGFloat bonus11_12_2 = [self stragyMoney:mutArr11_12 stragy:2];
+    CGFloat bonus11_12_3 = [self stragyMoney:mutArr11_12 stragy:3];
+    CGFloat bonus11_12_4 = [self stragyMoney:mutArr11_12 stragy:4];
+    CGFloat bonus11_12_5 = [self stragyMoney:mutArr11_12 stragy:5];
+    
+    CGFloat bonus1 = bonus9_10_1 + bonus10_11_1 + bonus11_12_1;
+    CGFloat bonus2 = bonus9_10_2 + bonus10_11_2 + bonus11_12_2;
+    CGFloat bonus3 = bonus9_10_3 + bonus10_11_3 + bonus11_12_3;
+    CGFloat bonus4 = bonus9_10_4 + bonus10_11_4 + bonus11_12_4;
+    CGFloat bonus5 = bonus9_10_5 + bonus10_11_5 + bonus11_12_5;
+    
+    HLMAddWinRecordModel *model =[[HLMAddWinRecordModel alloc]init];
+    model.timeStr = timeStr;
+    model.content9_10 = content9_10;
+    model.content10_11 = content10_11;
+    model.content11_12 = content11_12;
+    model.stragyM1 = bonus1;
+    model.stragyM2 = bonus2;
+    model.stragyM3 = bonus3;
+    model.stragyM4 = bonus4;
+    model.stragyM5 = bonus5;
+    
+    [[HLMDataBase shareDataBase] addWinRecord:model];
+    
+    [HLMNotificationCenter postNotificationName:kInsertModelSuccess object:nil];
 }
 
-- (NSString *)stragyMoney:(NSMutableArray *)mutArr stragy:(NSInteger)type{
-    
-    NSString *stragyMoney = @"";
-    for (NSString *str in mutArr) {
-        
-        NSArray *arr =[str componentsSeparatedByString:@"-"];
-        NSString *lastObject = [arr lastObject];
-        NSInteger unWinNum= [lastObject integerValue];
-        
-        
-    }
-    return stragyMoney;
-}
+- (void)query{
 
-- (NSString *)bonus:(NSInteger)unWinNum type:(NSInteger)type{
-    
-    NSInteger bonus = 0;
-    switch (type) {
-        case 1:
-        {
-            bonus = [self detailBonus:50];
-        }
-            break;
-        case 2:
-        {
-            
-        }
-            break;
-        case 3:
-        {
-            
-        }
-            break;
-        case 4:
-        {
-            
-        }
-            break;
-        case 5:
-        {
-            
-        }
-            break;
-        default:
-            break;
-    }
-    
-    return nil;
-}
-
-- (NSInteger)detailBonus:(NSInteger)principal{
-    
-    return principal * 0.9;
 }
 
 @end

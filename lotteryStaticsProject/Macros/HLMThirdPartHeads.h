@@ -11,5 +11,7 @@
 
 #import "WHC_AutoLayout.h"
 #import "MJExtension.h"
+#import "FMDB.h"
+#import "HLMDataBase.h"
 
 #endif /* HLMThirdPartHeads_h */

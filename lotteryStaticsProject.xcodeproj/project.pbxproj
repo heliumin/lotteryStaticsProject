@@ -12,6 +12,11 @@
 		526DF79721F9E1C800A97553 /* HLMAddWinRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79521F9E1C800A97553 /* HLMAddWinRecordViewController.m */; };
 		526DF79821F9E1C800A97553 /* HLMAddWinRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526DF79621F9E1C800A97553 /* HLMAddWinRecordViewController.xib */; };
 		526DF79B21F9E7D500A97553 /* HLMAddWinRecordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79A21F9E7D500A97553 /* HLMAddWinRecordModel.m */; };
+		526DF79F21FAD1F200A97553 /* HLMDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79E21FAD1F200A97553 /* HLMDataBase.m */; };
+		526DF7A421FB089B00A97553 /* HLMEditWinRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF7A221FB089B00A97553 /* HLMEditWinRecordViewController.m */; };
+		526DF7A521FB089B00A97553 /* HLMEditWinRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526DF7A321FB089B00A97553 /* HLMEditWinRecordViewController.xib */; };
+		526DF7A921FB08B200A97553 /* HLMDeleteWinRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF7A721FB08B200A97553 /* HLMDeleteWinRecordViewController.m */; };
+		526DF7AA21FB08B200A97553 /* HLMDeleteWinRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 526DF7A821FB08B200A97553 /* HLMDeleteWinRecordViewController.xib */; };
 		52C6750121F99E0C0053A40A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6750021F99E0C0053A40A /* AppDelegate.m */; };
 		52C6750421F99E0C0053A40A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C6750321F99E0C0053A40A /* ViewController.m */; };
 		52C6750721F99E0C0053A40A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C6750521F99E0C0053A40A /* Main.storyboard */; };
@@ -60,6 +65,15 @@
 		526DF79621F9E1C800A97553 /* HLMAddWinRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMAddWinRecordViewController.xib; sourceTree = "<group>"; };
 		526DF79921F9E7D500A97553 /* HLMAddWinRecordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMAddWinRecordModel.h; sourceTree = "<group>"; };
 		526DF79A21F9E7D500A97553 /* HLMAddWinRecordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMAddWinRecordModel.m; sourceTree = "<group>"; };
+		526DF79D21FAD1F200A97553 /* HLMDataBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMDataBase.h; sourceTree = "<group>"; };
+		526DF79E21FAD1F200A97553 /* HLMDataBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMDataBase.m; sourceTree = "<group>"; };
+		526DF7A021FB01D900A97553 /* HLMNotificationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMNotificationMacro.h; sourceTree = "<group>"; };
+		526DF7A121FB089B00A97553 /* HLMEditWinRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMEditWinRecordViewController.h; sourceTree = "<group>"; };
+		526DF7A221FB089B00A97553 /* HLMEditWinRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMEditWinRecordViewController.m; sourceTree = "<group>"; };
+		526DF7A321FB089B00A97553 /* HLMEditWinRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMEditWinRecordViewController.xib; sourceTree = "<group>"; };
+		526DF7A621FB08B200A97553 /* HLMDeleteWinRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMDeleteWinRecordViewController.h; sourceTree = "<group>"; };
+		526DF7A721FB08B200A97553 /* HLMDeleteWinRecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLMDeleteWinRecordViewController.m; sourceTree = "<group>"; };
+		526DF7A821FB08B200A97553 /* HLMDeleteWinRecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HLMDeleteWinRecordViewController.xib; sourceTree = "<group>"; };
 		52C674FC21F99E0C0053A40A /* lotteryStaticsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lotteryStaticsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C674FF21F99E0C0053A40A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52C6750021F99E0C0053A40A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -132,6 +146,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		526DF79C21FAD1C400A97553 /* FMDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				526DF79D21FAD1F200A97553 /* HLMDataBase.h */,
+				526DF79E21FAD1F200A97553 /* HLMDataBase.m */,
+			);
+			path = FMDataBase;
+			sourceTree = "<group>";
+		};
 		52C674F321F99E0C0053A40A = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +191,7 @@
 				52C6750D21F99E0D0053A40A /* Info.plist */,
 				52C6750E21F99E0D0053A40A /* main.m */,
 				52C6753321F9A70D0053A40A /* lotteryStaticsProject_PrefixHeader.pch */,
+				526DF79C21FAD1C400A97553 /* FMDataBase */,
 				52C6755021F9B7AF0053A40A /* Plists */,
 				52C6753121F9A3EA0053A40A /* Macros */,
 			);
@@ -197,6 +221,7 @@
 			children = (
 				52C6753221F9A5A50053A40A /* HLMCustomMacro.h */,
 				52C6753821F9A94C0053A40A /* HLMThirdPartHeads.h */,
+				526DF7A021FB01D900A97553 /* HLMNotificationMacro.h */,
 			);
 			path = Macros;
 			sourceTree = "<group>";
@@ -234,6 +259,12 @@
 				526DF79421F9E1C800A97553 /* HLMAddWinRecordViewController.h */,
 				526DF79521F9E1C800A97553 /* HLMAddWinRecordViewController.m */,
 				526DF79621F9E1C800A97553 /* HLMAddWinRecordViewController.xib */,
+				526DF7A121FB089B00A97553 /* HLMEditWinRecordViewController.h */,
+				526DF7A221FB089B00A97553 /* HLMEditWinRecordViewController.m */,
+				526DF7A321FB089B00A97553 /* HLMEditWinRecordViewController.xib */,
+				526DF7A621FB08B200A97553 /* HLMDeleteWinRecordViewController.h */,
+				526DF7A721FB08B200A97553 /* HLMDeleteWinRecordViewController.m */,
+				526DF7A821FB08B200A97553 /* HLMDeleteWinRecordViewController.xib */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -400,6 +431,8 @@
 				526DF78E21F9DB1900A97553 /* LotteryRecord.plist in Resources */,
 				52C6750C21F99E0D0053A40A /* LaunchScreen.storyboard in Resources */,
 				52C6755721F9C0E50053A40A /* HLMWinStatisticsTableViewCell.xib in Resources */,
+				526DF7AA21FB08B200A97553 /* HLMDeleteWinRecordViewController.xib in Resources */,
+				526DF7A521FB089B00A97553 /* HLMEditWinRecordViewController.xib in Resources */,
 				526DF79021F9DBF600A97553 /* WinRord.plist in Resources */,
 				52C6755221F9B7E50053A40A /* LotteryStrategys.plist in Resources */,
 				52C6750921F99E0D0053A40A /* Assets.xcassets in Resources */,
@@ -621,10 +654,13 @@
 				52C6750421F99E0C0053A40A /* ViewController.m in Sources */,
 				526DF79B21F9E7D500A97553 /* HLMAddWinRecordModel.m in Sources */,
 				52C6753B21F9ADFB0053A40A /* HLMWinStatisticsTableViewController.m in Sources */,
+				526DF7A421FB089B00A97553 /* HLMEditWinRecordViewController.m in Sources */,
 				52C6750F21F99E0D0053A40A /* main.m in Sources */,
 				52C6755B21F9C0F70053A40A /* HLMLotteryStrategysTableViewCell.m in Sources */,
+				526DF7A921FB08B200A97553 /* HLMDeleteWinRecordViewController.m in Sources */,
 				52C6750121F99E0C0053A40A /* AppDelegate.m in Sources */,
 				52C6754121F9AE900053A40A /* HLMWinStatisticsModel.m in Sources */,
+				526DF79F21FAD1F200A97553 /* HLMDataBase.m in Sources */,
 				52C6755621F9C0E50053A40A /* HLMWinStatisticsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

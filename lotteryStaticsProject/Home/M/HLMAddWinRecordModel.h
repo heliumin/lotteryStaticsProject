@@ -13,14 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HLMAddWinRecordModel : NSObject
 
 @property (nonatomic,copy) NSString *timeStr;
-@property (nonatomic, strong) NSArray *data9_10;
-@property (nonatomic, strong) NSArray *data10_11;
-@property (nonatomic, strong) NSArray *data11_12;
-@property (nonatomic,copy) NSString *stragyMoney1;
-@property (nonatomic,copy) NSString *stragyMoney2;
-@property (nonatomic,copy) NSString *stragyMoney3;
-@property (nonatomic,copy) NSString *stragyMoney4;
-@property (nonatomic,copy) NSString *stragyMoney5;
+@property (nonatomic,copy) NSString *content9_10;
+@property (nonatomic,copy) NSString *content10_11;
+@property (nonatomic,copy) NSString *content11_12;
+@property (nonatomic,assign) CGFloat stragyM1;
+@property (nonatomic,assign) CGFloat stragyM2;
+@property (nonatomic,assign) CGFloat stragyM3;
+@property (nonatomic,assign) CGFloat stragyM4;
+@property (nonatomic,assign) CGFloat stragyM5;
 
 @end
 

@@ -62,7 +62,6 @@
         case 0:
         {
             HLMWinStatisticsTableViewController * vc = [[HLMWinStatisticsTableViewController alloc]init];
-            vc.view.backgroundColor =[UIColor redColor];
             vc.title = self.dataArr[indexPath.row];
             [self.navigationController pushViewController:vc animated:YES];
         }

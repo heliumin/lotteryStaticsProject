@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HLMWinStatisticsModel : NSObject
 
-
-
 @end
 
 NS_ASSUME_NONNULL_END
