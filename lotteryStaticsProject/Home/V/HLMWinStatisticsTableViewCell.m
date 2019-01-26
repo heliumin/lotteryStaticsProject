@@ -55,9 +55,14 @@
     NSString *content10_11Str = model.content10_11.length > 0 ?model.content10_11:@"无";
     NSString *content11_12Str = model.content11_12.length > 0 ?model.content11_12:@"无";
     
-    self.content9_10Lbl.text = [NSString stringWithFormat:@"9:00-10:00 %@",content9_10Str];
-    self.content10_11Lbl.text = [NSString stringWithFormat:@"10:00-11:00 %@",content10_11Str];;
-    self.content11_12Lbl.text = [NSString stringWithFormat:@"11:00-12:00 %@",content11_12Str];;
+    self.content9_10Lbl.text = [NSString stringWithFormat:@"9:00-10:00\n%@",content9_10Str];
+//    [self.content9_10Lbl sizeToFit];
+    
+    self.content10_11Lbl.text = [NSString stringWithFormat:@"10:00-11:00\n%@",content10_11Str];
+//    [self.content10_11Lbl sizeToFit];
+    
+    self.content11_12Lbl.text = [NSString stringWithFormat:@"11:00-12:00\n%@",content11_12Str];
+//    [self.content11_12Lbl sizeToFit];
     
     self.M1Lbl1.text = [NSString stringWithFormat:@"策略1: %@元",@(model.stragyM1)];
     self.M2Lbl.text = [NSString stringWithFormat:@"策略2: %@元",@(model.stragyM2)];

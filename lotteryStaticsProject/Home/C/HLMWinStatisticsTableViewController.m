@@ -28,8 +28,11 @@ static NSString *identifier = @"cell";
     
     self.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addWinRecordAction)]];
     
-    self.tableView.rowHeight = 330;
+//    self.tableView.rowHeight = 330;
     [self.tableView registerNib:[UINib nibWithNibName:@"HLMWinStatisticsTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:identifier];
+    
+    self.tableView.estimatedRowHeight = 400.0f;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
 //    添加通知
     [self addNotifications];
