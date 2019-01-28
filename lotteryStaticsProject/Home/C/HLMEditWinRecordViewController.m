@@ -10,8 +10,6 @@
 
 @interface HLMEditWinRecordViewController ()
 
-
-
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView1;
 
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView2;
@@ -25,6 +23,17 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    [self refreshData];
+}
+
+- (void)refreshData{
+    
+    self.contentTextView1.text = _model.content9_10;
+    
+    self.contentTextView2.text = _model.content10_11;
+    
+    self.contentTextView3.text = _model.content11_12;
 }
 
 - (IBAction)updatebtnAction:(id)sender {
@@ -93,49 +102,33 @@
     CGFloat bonus4 = bonus9_10_4 + bonus10_11_4 + bonus11_12_4;
     CGFloat bonus5 = bonus9_10_5 + bonus10_11_5 + bonus11_12_5;
 
-    if (content9_10.length > 0) {
-     
-        _model.content9_10 = content9_10;
-    }
+    _model.content9_10 = content9_10;
     
-    if (content10_11.length > 0) {
-        
-        _model.content10_11 = content10_11;
-    }
+    _model.content10_11 = content10_11;
     
-    if (content11_12.length > 0) {
-        
-        _model.content11_12 = content11_12;
-    }
+    _model.content11_12 = content11_12;
 
-    if (bonus1 != _model.stragyM1) {
+    _model.stragyM1 = bonus1;
     
-        _model.stragyM1 = bonus1;
-    }
+    _model.stragyM2 = bonus2;
     
-    if (bonus2 != _model.stragyM2) {
+    _model.stragyM3 = bonus3;
+    
+    _model.stragyM4 = bonus4;
+    _model.stragyM5 = bonus5;
+    
+    BOOL success = [[HLMDataBase shareDataBase] updateWinRecord:_model];
+    
+    if (success) {
         
-        _model.stragyM2 = bonus2;
-    }
-    
-    if (bonus3 != _model.stragyM3) {
+        [HLMNotificationCenter postNotificationName:kUpdateModelSuccess object:nil];
         
-        _model.stragyM3 = bonus3;
+        [MBProgressHUD showText:@"修改成功" withWindowLast:NO];
     }
-    
-    if (bonus4 != _model.stragyM4) {
+    else{
         
-        _model.stragyM4 = bonus4;
+        [MBProgressHUD showText:@"修改失败" withWindowLast:NO];
     }
-    
-    if (bonus5 != _model.stragyM5) {
-        
-        _model.stragyM5 = bonus5;
-    }
-    
-    [[HLMDataBase shareDataBase] updateWinRecord:_model];
-    
-    [HLMNotificationCenter postNotificationName:kUpdateModelSuccess object:nil];
 }
 
 - (CGFloat )stragyMoney:(NSMutableArray *)mutArr stragy:(NSInteger)type{
@@ -144,7 +137,7 @@
     for (NSString *str in mutArr) {
         
         NSArray *arr =[str componentsSeparatedByString:@"-"];
-        NSString *lastObject = [arr lastObject];
+        NSString *lastObject = [[arr lastObject] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         NSInteger unWinNum= [lastObject integerValue];
         
         CGFloat detailBonus = [self bonus:unWinNum type:type];

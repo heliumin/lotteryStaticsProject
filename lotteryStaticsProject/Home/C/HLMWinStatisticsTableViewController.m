@@ -40,7 +40,19 @@ static NSString *identifier = @"cell";
 #pragma mark - Event
 - (void)loadData{
     
-    self.dataArr =[[HLMDataBase shareDataBase] getAllWinRecords];
+    NSArray *dataArr =[[HLMDataBase shareDataBase] getAllWinRecords];
+    
+    self.dataArr = [dataArr sortedArrayUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+        
+        HLMAddWinRecordModel *model1 = (HLMAddWinRecordModel *)obj1;
+        HLMAddWinRecordModel *model2 = (HLMAddWinRecordModel *)obj2;
+        
+        NSDate *date1 =[NSDate dateWithString:model1.timeStr formatString:@"yyyy-MM-dd"];
+        NSDate *date2 =[NSDate dateWithString:model2.timeStr formatString:@"yyyy-MM-dd"];
+        
+        return [date1 compare:date2];
+    }];
+    
     [self.tableView reloadData];
 }
 

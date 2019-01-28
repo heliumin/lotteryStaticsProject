@@ -126,27 +126,15 @@ static HLMDataBase *_DBCtl = nil;
 
 - (BOOL)updateWinRecord:(HLMAddWinRecordModel *)model{
     
-//    if (model.timeStr.length > 0) {
-//
-//        [_db open];
-//
-//        if (model.content9_10.length > 0) {
-//
-//            [_db executeUpdate:@"UPDATE 'winRecord' SET contetntNine = ?  WHERE time = ? ",model.content9_10,model.timeStr];
-//        }
-//
-//        if (model.content10_11.length > 0) {
-//
-//            [_db executeUpdate:@"UPDATE 'winRecord' SET contetntTen = ?  WHERE time = ? ",model.content10_11,model.timeStr];
-//        }
-//
-//        if (model.content11_12.length > 0) {
-//
-//            [_db executeUpdate:@"UPDATE 'winRecord' SET contetntEle = ?  WHERE time = ? ",model.content11_12 ,model.timeStr];
-//        }
-//
-//        [_db close];
-//    }
+    [_db open];
+    
+    BOOL result1 = [_db executeUpdate:@"UPDATE 'winRecord' SET contentNine = ?  WHERE time = ? ",model.content9_10,model.timeStr];
+
+    BOOL result2 = [_db executeUpdate:@"UPDATE 'winRecord' SET contentTen = ?  WHERE time = ? ",model.content10_11,model.timeStr];
+
+    BOOL result3 = [_db executeUpdate:@"UPDATE 'winRecord' SET contentEle = ?  WHERE time = ? ",model.content11_12 ,model.timeStr];
+    
+    [_db close];
     
     return YES;
 }
