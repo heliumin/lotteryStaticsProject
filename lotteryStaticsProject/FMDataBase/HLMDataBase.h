@@ -16,16 +16,19 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)shareDataBase;
 
 //添加
-- (void)addWinRecord:(HLMAddWinRecordModel *)model;
+- (BOOL)addWinRecord:(HLMAddWinRecordModel *)model;
 
 //删除
-- (void)deleteWinRecord:(HLMAddWinRecordModel *)model;
+- (BOOL)deleteWinRecord:(HLMAddWinRecordModel *)model;
 
 //更新
-- (void)updateWinRecord:(HLMAddWinRecordModel *)model;
+- (BOOL)updateWinRecord:(HLMAddWinRecordModel *)model;
 
-//查找
+//查找全部
 - (NSMutableArray *)getAllWinRecords;
+
+//查找某个日期
+- (NSMutableArray *)findRecord:(NSString *)time;
 
 @end
 

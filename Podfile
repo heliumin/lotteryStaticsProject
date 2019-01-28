@@ -18,6 +18,7 @@ target 'lotteryStaticsProject' do
   pod 'DateTools'
   pod 'MWPhotoBrowser'
   pod 'PDTSimpleCalendar'
+  pod 'UITableView+FDTemplateLayoutCell'
 
   target 'lotteryStaticsProjectTests' do
     inherit! :search_paths

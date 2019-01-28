@@ -12,7 +12,7 @@
 
 static NSString *identifier = @"cell";
 
-@interface HLMRewardRecordViewController ()
+@interface HLMRewardRecordViewController ()<PDTSimpleCalendarViewDelegate>
 
 @property(nonatomic, strong) NSArray *dataArr;
 
@@ -26,6 +26,8 @@ static NSString *identifier = @"cell";
     
     [self.tableView registerNib:[UINib nibWithNibName:@"HLMRewardRecordViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:identifier];
     
+    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]initWithTitle:@"筛选" style:UIBarButtonItemStylePlain target:self action:@selector(timeSelectAction)];
+    
     NSArray *arr = [[HLMDataBase shareDataBase] getAllWinRecords];
     
     HLMRewardRecordModel *rewardModel =[[HLMRewardRecordModel alloc]init];
@@ -38,8 +40,30 @@ static NSString *identifier = @"cell";
         rewardModel.totalStragyM4 += model.stragyM4;
         rewardModel.totalStragyM5 += model.stragyM5;
     }
+    if (arr.count > 1) {
+        
+        HLMAddWinRecordModel *model0 = (HLMAddWinRecordModel *)arr[0];
+        HLMAddWinRecordModel *model1 = (HLMAddWinRecordModel *)arr[1];
+        
+        rewardModel.timeStr =[NSString stringWithFormat:@"时间：%@ - %@",model0.timeStr, model1.timeStr];
+    }
     self.dataArr = @[rewardModel];
     [self.tableView reloadData];
+}
+
+- (void)timeSelectAction{
+    
+    PDTSimpleCalendarViewController *calendarVc=[[PDTSimpleCalendarViewController alloc]init];
+    calendarVc.delegate = self;
+    [self.navigationController pushViewController:calendarVc animated:YES];
+}
+
+#pragma mark - PDTSimpleCalendarViewDelegate
+- (void)simpleCalendarViewController:(PDTSimpleCalendarViewController *)controller didSelectDate:(NSDate *)date{
+    
+    NSString *timeKey =[date formattedDateWithFormat:@"yyyy-MM-dd"];
+    
+    [[HLMDataBase shareDataBase] findRecord:timeKey];
 }
 
 #pragma mark - Table view data source
@@ -60,9 +84,13 @@ static NSString *identifier = @"cell";
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    return (20*4 + 10*10);
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [tableView fd_heightForCellWithIdentifier:identifier cacheByIndexPath:indexPath configuration:^(id cell) {
+        
+        HLMRewardRecordViewCell *winRewardCell = (HLMRewardRecordViewCell *)cell;
+        winRewardCell.model = self.dataArr[indexPath.row];
+    }];
 }
 
 /*

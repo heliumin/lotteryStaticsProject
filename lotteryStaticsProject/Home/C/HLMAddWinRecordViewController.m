@@ -8,7 +8,7 @@
 
 #import "HLMAddWinRecordViewController.h"
 
-@interface HLMAddWinRecordViewController ()
+@interface HLMAddWinRecordViewController ()<PDTSimpleCalendarViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *textView9_10;
 
@@ -16,7 +16,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *textView11_12;
 
-@property (weak, nonatomic) IBOutlet UITextField *timeTextField;
+@property (weak, nonatomic) IBOutlet UIButton *timeBtn;
+
+@property (nonatomic,copy) NSString *timeStr;
 
 @end
 
@@ -28,8 +30,24 @@
 }
 
 - (IBAction)doneAction:(id)sender {
+
+    if ([self enableToInsert]) {
+        
+        [self insert];
+    }
+}
+
+- (BOOL)enableToInsert{
     
-    [self insert];
+    BOOL enable = YES;
+    
+    if (self.timeStr.length == 0) {
+        
+        [MBProgressHUD showText:@"请选择时间" withWindowLast:NO];
+        
+        return NO;
+    }
+    return enable;
 }
 
 - (CGFloat )stragyMoney:(NSMutableArray *)mutArr stragy:(NSInteger)type{
@@ -102,7 +120,7 @@
 
 - (void)insert{
     
-    NSString *timeStr = self.timeTextField.text;
+    NSString *timeStr = self.timeStr;
     
     NSString *content9_10 = self.textView9_10.text;
     
@@ -179,9 +197,37 @@
     model.stragyM4 = bonus4;
     model.stragyM5 = bonus5;
     
-    [[HLMDataBase shareDataBase] addWinRecord:model];
+    BOOL success = [[HLMDataBase shareDataBase] addWinRecord:model];
     
-    [HLMNotificationCenter postNotificationName:kInsertModelSuccess object:nil];
+    if (success) {
+        
+        [HLMNotificationCenter postNotificationName:kInsertModelSuccess object:nil];
+        
+        [MBProgressHUD showText:@"添加成功" withWindowLast:NO];
+    }
+    else{
+        
+        [MBProgressHUD showText:@"添加失败" withWindowLast:NO];
+    }
+}
+
+- (IBAction)timeAction:(id)sender {
+    
+    PDTSimpleCalendarViewController *calendarVc=[[PDTSimpleCalendarViewController alloc]init];
+    calendarVc.delegate = self;
+    [self.navigationController pushViewController:calendarVc animated:YES];
+}
+
+#pragma mark - PDTSimpleCalendarViewDelegate
+- (void)simpleCalendarViewController:(PDTSimpleCalendarViewController *)controller didSelectDate:(NSDate *)date{
+    
+    NSString *timeKey =[date formattedDateWithFormat:@"yyyy-MM-dd"];
+    
+    self.timeStr = timeKey;
+    
+    [self.timeBtn setTitle:timeKey forState:UIControlStateNormal];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

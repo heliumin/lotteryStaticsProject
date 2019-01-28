@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HLMRewardRecordModel : NSObject
 
+@property(nonatomic, copy) NSString *timeStr;
 @property(nonatomic, assign) CGFloat totalStragyM1;
 @property(nonatomic, assign) CGFloat totalStragyM2;
 @property(nonatomic, assign) CGFloat totalStragyM3;

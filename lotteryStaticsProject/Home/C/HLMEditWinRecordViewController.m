@@ -10,6 +10,8 @@
 
 @interface HLMEditWinRecordViewController ()
 
+
+
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView1;
 
 @property (weak, nonatomic) IBOutlet UITextView *contentTextView2;

@@ -82,7 +82,7 @@ static HLMDataBase *_DBCtl = nil;
 }
 
 #pragma mark - Event
-- (void)addWinRecord:(HLMAddWinRecordModel *)model{
+- (BOOL)addWinRecord:(HLMAddWinRecordModel *)model{
     
     [_db open];
     
@@ -109,18 +109,22 @@ static HLMDataBase *_DBCtl = nil;
         HLMLog(@"插入失败");
     }
     [_db close];
+    
+    return success;
 }
 
-- (void)deleteWinRecord:(HLMAddWinRecordModel *)model{
+- (BOOL)deleteWinRecord:(HLMAddWinRecordModel *)model{
     
     [_db open];
     
-    [_db executeUpdate:@"DELETE FROM winRecord WHERE time = ?",model.timeStr];
+    BOOL success = [_db executeUpdate:@"DELETE FROM winRecord WHERE time = ?",model.timeStr];
     
     [_db close];
+    
+    return success;
 }
 
-- (void)updateWinRecord:(HLMAddWinRecordModel *)model{
+- (BOOL)updateWinRecord:(HLMAddWinRecordModel *)model{
     
 //    if (model.timeStr.length > 0) {
 //
@@ -143,6 +147,8 @@ static HLMDataBase *_DBCtl = nil;
 //
 //        [_db close];
 //    }
+    
+    return YES;
 }
 
 - (NSMutableArray *)getAllWinRecords{
@@ -168,6 +174,34 @@ static HLMDataBase *_DBCtl = nil;
         
         [dataArray addObject:model];
     }
+    [_db close];
+    return dataArray;
+}
+
+- (NSMutableArray *)findRecord:(NSString *)time{
+    
+    [_db open];
+    
+    NSMutableArray *dataArray = [[NSMutableArray alloc] init];
+    
+    FMResultSet *res = [_db executeQuery:[NSString stringWithFormat:@"SELECT * FROM winRecord where time = %@",time]];
+    
+    while ([res next]) {
+        
+        HLMAddWinRecordModel *model = [[HLMAddWinRecordModel alloc] init];
+        model.timeStr = [res stringForColumn:@"time"];
+        model.content9_10 = [res stringForColumn:@"contentNine"];
+        model.content10_11 = [res stringForColumn:@"contentTen"];
+        model.content11_12 = [res stringForColumn:@"contentEle"];
+        model.stragyM1 = [[res stringForColumn:@"stragyM1"] doubleValue];
+        model.stragyM2 = [[res stringForColumn:@"stragyM2"] doubleValue];
+        model.stragyM3 = [[res stringForColumn:@"stragyM3"] doubleValue];
+        model.stragyM4 = [[res stringForColumn:@"stragyM4"] doubleValue];
+        model.stragyM5 = [[res stringForColumn:@"stragyM5"] doubleValue];
+        
+        [dataArray addObject:model];
+    }
+    
     [_db close];
     return dataArray;
 }

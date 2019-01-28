@@ -25,11 +25,12 @@ PODS:
   - MWPhotoBrowser (2.1.2):
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
-    - "SDWebImage (!= 3.7.2, ~> 3.7)"
+    - SDWebImage (!= 3.7.2, ~> 3.7)
   - PDTSimpleCalendar (0.9.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - UITableView+FDTemplateLayoutCell (1.6)
   - WHC_AutoLayoutKit (2.8.4):
     - WHC_AutoLayoutKit/AutoCellHeight (= 2.8.4)
     - WHC_AutoLayoutKit/Frame (= 2.8.4)
@@ -62,23 +63,9 @@ DEPENDENCIES:
   - MWPhotoBrowser
   - PDTSimpleCalendar
   - SDWebImage
+  - UITableView+FDTemplateLayoutCell
   - WHC_AutoLayoutKit
   - WMPageController
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - AFNetworking
-    - DACircularProgress
-    - DateTools
-    - FMDB
-    - IQKeyboardManager
-    - MBProgressHUD
-    - MJExtension
-    - MWPhotoBrowser
-    - PDTSimpleCalendar
-    - SDWebImage
-    - WHC_AutoLayoutKit
-    - WMPageController
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
@@ -91,9 +78,10 @@ SPEC CHECKSUMS:
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
   PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
   WHC_AutoLayoutKit: 2f36fa6a92f0f46783486c4dee630aae7e1777bb
   WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
 
-PODFILE CHECKSUM: 0e0a463fb94095ae16289bc69b9ee6e88b68c38d
+PODFILE CHECKSUM: b299cc662cb32135c09d6201b47bfa40b6b24ecd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.4.0

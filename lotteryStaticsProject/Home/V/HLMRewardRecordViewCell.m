@@ -10,6 +10,8 @@
 
 @interface HLMRewardRecordViewCell ()
 
+@property (weak, nonatomic) IBOutlet UILabel *timeLbl;
+
 @property (weak, nonatomic) IBOutlet UILabel *stragyLbl1;
 @property (weak, nonatomic) IBOutlet UILabel *stragyLbl2;
 @property (weak, nonatomic) IBOutlet UILabel *stragyLbl3;
@@ -37,6 +39,8 @@
 - (void)setModel:(HLMRewardRecordModel *)model{
     
     _model = model;
+    
+    self.timeLbl.text = model.timeStr;
     
     self.stragyLbl1.text =[NSString stringWithFormat:@"策略1总金额： %@",@(model.totalStragyM1)];
     

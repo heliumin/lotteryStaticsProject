@@ -28,11 +28,7 @@ static NSString *identifier = @"cell";
     
     self.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addWinRecordAction)]];
     
-//    self.tableView.rowHeight = 330;
     [self.tableView registerNib:[UINib nibWithNibName:@"HLMWinStatisticsTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:identifier];
-    
-    self.tableView.estimatedRowHeight = 400.0f;
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
 //    添加通知
     [self addNotifications];
@@ -75,7 +71,7 @@ static NSString *identifier = @"cell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -106,18 +102,14 @@ static NSString *identifier = @"cell";
     return @[deleteAction, editAction];
 }
 
-// - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath*)indexPath
-//{
-//
-//     if (editingStyle == UITableViewCellEditingStyleDelete) {
-//
-//         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-//
-//     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-//
-//
-//     }
-//}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [tableView fd_heightForCellWithIdentifier:identifier cacheByIndexPath:indexPath configuration:^(id cell) {
+        
+        HLMWinStatisticsTableViewCell *staticsCell = (HLMWinStatisticsTableViewCell *)cell;
+        staticsCell.model = self.dataArr[indexPath.row];
+    }];
+}
 
 #pragma mark - Event
 - (void)addWinRecordAction{
@@ -134,10 +126,6 @@ static NSString *identifier = @"cell";
     [[HLMDataBase shareDataBase] deleteWinRecord:model];
 
     [self loadData];
-    
-//    HLMDeleteWinRecordViewController *vc =[[HLMDeleteWinRecordViewController alloc]init];
-//    vc.title = @"删除中奖记录";
-//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)updateWinRecordAction:(NSInteger)index{

@@ -61,9 +61,13 @@ static NSString *identifier = @"cell";
     return cell;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-
-    return (20*4 + 7*10);
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [tableView fd_heightForCellWithIdentifier:identifier cacheByIndexPath:indexPath configuration:^(id cell) {
+        
+        HLMLotteryStrategysTableViewCell *stragyCell = (HLMLotteryStrategysTableViewCell *)cell;
+        stragyCell.model = self.dataArr[indexPath.row];
+    }];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

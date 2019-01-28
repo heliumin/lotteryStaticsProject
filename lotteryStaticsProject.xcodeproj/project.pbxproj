@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		521C4F9B21FEE2D70042458F /* MBProgressHUD+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 521C4F9A21FEE2D70042458F /* MBProgressHUD+HUD.m */; };
 		526DF78E21F9DB1900A97553 /* LotteryRecord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526DF78D21F9DB1900A97553 /* LotteryRecord.plist */; };
 		526DF79021F9DBF600A97553 /* WinRord.plist in Resources */ = {isa = PBXBuildFile; fileRef = 526DF78F21F9DBF600A97553 /* WinRord.plist */; };
 		526DF79721F9E1C800A97553 /* HLMAddWinRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526DF79521F9E1C800A97553 /* HLMAddWinRecordViewController.m */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		3D7EB2147EF154482CDF11F1 /* Pods-lotteryStaticsProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lotteryStaticsProjectUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		521C4F9921FEE2D70042458F /* MBProgressHUD+HUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+HUD.h"; sourceTree = "<group>"; };
+		521C4F9A21FEE2D70042458F /* MBProgressHUD+HUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+HUD.m"; sourceTree = "<group>"; };
 		526DF78D21F9DB1900A97553 /* LotteryRecord.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LotteryRecord.plist; sourceTree = "<group>"; };
 		526DF78F21F9DBF600A97553 /* WinRord.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WinRord.plist; sourceTree = "<group>"; };
 		526DF79421F9E1C800A97553 /* HLMAddWinRecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLMAddWinRecordViewController.h; sourceTree = "<group>"; };
@@ -159,6 +162,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521C4F9721FEE2A70042458F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				521C4F9821FEE2AF0042458F /* Category */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		521C4F9821FEE2AF0042458F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				521C4F9921FEE2D70042458F /* MBProgressHUD+HUD.h */,
+				521C4F9A21FEE2D70042458F /* MBProgressHUD+HUD.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		526DF79C21FAD1C400A97553 /* FMDataBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +213,7 @@
 		52C674FE21F99E0C0053A40A /* lotteryStaticsProject */ = {
 			isa = PBXGroup;
 			children = (
+				521C4F9721FEE2A70042458F /* Common */,
 				52C6753421F9A83C0053A40A /* Home */,
 				52C674FF21F99E0C0053A40A /* AppDelegate.h */,
 				52C6750021F99E0C0053A40A /* AppDelegate.m */,
@@ -348,6 +369,7 @@
 				52C674F921F99E0C0053A40A /* Frameworks */,
 				52C674FA21F99E0C0053A40A /* Resources */,
 				7751C707287C912122A882A4 /* [CP] Copy Pods Resources */,
+				3DFDFC09115BB57090F39030 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -366,6 +388,8 @@
 				52C6751021F99E0D0053A40A /* Sources */,
 				52C6751121F99E0D0053A40A /* Frameworks */,
 				52C6751221F99E0D0053A40A /* Resources */,
+				DF4A97BEDBF50F4789C0C73B /* [CP] Embed Pods Frameworks */,
+				6BE0673FBBEE583D174B157F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -385,6 +409,8 @@
 				52C6751B21F99E0D0053A40A /* Sources */,
 				52C6751C21F99E0D0053A40A /* Frameworks */,
 				52C6751D21F99E0D0053A40A /* Resources */,
+				3DB1907C6508368FE6D553AA /* [CP] Embed Pods Frameworks */,
+				75311173D2323741CE459354 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -494,6 +520,82 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		3DB1907C6508368FE6D553AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DFDFC09115BB57090F39030 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProject/Pods-lotteryStaticsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BE0673FBBEE583D174B157F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75311173D2323741CE459354 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectUITests/Pods-lotteryStaticsProjectUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7751C707287C912122A882A4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -534,6 +636,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DF4A97BEDBF50F4789C0C73B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lotteryStaticsProjectTests/Pods-lotteryStaticsProjectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F1FEDAE5B26C9339A30F90C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -560,6 +681,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52C6754A21F9B12C0053A40A /* HLMLotteryStrategysModel.m in Sources */,
+				521C4F9B21FEE2D70042458F /* MBProgressHUD+HUD.m in Sources */,
 				52C6754721F9B1150053A40A /* HLMLotteryStrategysTableViewController.m in Sources */,
 				526DF79721F9E1C800A97553 /* HLMAddWinRecordViewController.m in Sources */,
 				52C6750421F99E0C0053A40A /* ViewController.m in Sources */,
@@ -748,7 +870,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N965Z2D83Z;
+				DEVELOPMENT_TEAM = ZQ824MN553;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = lotteryStaticsProject/lotteryStaticsProject_PrefixHeader.pch;
 				INFOPLIST_FILE = lotteryStaticsProject/Info.plist;
@@ -768,7 +890,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N965Z2D83Z;
+				DEVELOPMENT_TEAM = ZQ824MN553;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = lotteryStaticsProject/lotteryStaticsProject_PrefixHeader.pch;
 				INFOPLIST_FILE = lotteryStaticsProject/Info.plist;
