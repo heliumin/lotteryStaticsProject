@@ -134,9 +134,19 @@ static HLMDataBase *_DBCtl = nil;
 
     BOOL result3 = [_db executeUpdate:@"UPDATE 'winRecord' SET contentEle = ?  WHERE time = ? ",model.content11_12 ,model.timeStr];
     
+    BOOL result4 = [_db executeUpdate:@"UPDATE 'winRecord' SET stragyM1 = ?  WHERE time = ? ",@(model.stragyM1) ,model.timeStr];
+
+    BOOL result5 = [_db executeUpdate:@"UPDATE 'winRecord' SET stragyM2 = ?  WHERE time = ? ",@(model.stragyM2) ,model.timeStr];
+
+    BOOL result6 = [_db executeUpdate:@"UPDATE 'winRecord' SET stragyM3 = ?  WHERE time = ? ",@(model.stragyM3) ,model.timeStr];
+
+    BOOL result7 = [_db executeUpdate:@"UPDATE 'winRecord' SET stragyM4 = ?  WHERE time = ? ",@(model.stragyM4) ,model.timeStr];
+
+    BOOL result8 = [_db executeUpdate:@"UPDATE 'winRecord' SET stragyM5 = ?  WHERE time = ? ",@(model.stragyM5) ,model.timeStr];
+    
     [_db close];
     
-    return YES;
+    return (result1 && result2 && result3 && result4 && result5 && result6 && result7 && result8);
 }
 
 - (NSMutableArray *)getAllWinRecords{

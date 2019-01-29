@@ -115,6 +115,7 @@
     _model.stragyM3 = bonus3;
     
     _model.stragyM4 = bonus4;
+    
     _model.stragyM5 = bonus5;
     
     BOOL success = [[HLMDataBase shareDataBase] updateWinRecord:_model];
@@ -151,6 +152,9 @@
     CGFloat bonus = 0;
     if (unWinNum >= 4) {
         
+        NSInteger count0 = (pow(2, (unWinNum-4)));
+        NSInteger count1 = (pow(2, (unWinNum-3)) - 1);
+        
         switch (type) {
             case 1:
             {
@@ -170,24 +174,25 @@
                 break;
             case 3:
             {
-                CGFloat winBonus = (unWinNum > 5) ? 0 : 95 * (unWinNum - 3);
-                CGFloat principal = (unWinNum > 5) ? 150 : (50 * (pow(2, (unWinNum-3))-1));
+                CGFloat winBonus = (unWinNum > 5) ? 0 : 95 * count0;
+                CGFloat principal = (unWinNum > 5) ? 150 : (50 * count1);
                 
                 bonus = winBonus - principal;
             }
                 break;
             case 4:
             {
-                CGFloat winBonus = (unWinNum > 6) ? 0 : 95 * (unWinNum - 3);
-                CGFloat principal = (unWinNum > 6) ? 350 : (50 * (pow(2, (unWinNum-3))-1));
+                
+                CGFloat winBonus = (unWinNum > 6) ? 0 : 95 * count0;
+                CGFloat principal = (unWinNum > 6) ? 350 : (50 * count1);
                 
                 bonus = winBonus - principal;
             }
                 break;
             case 5:
             {
-                CGFloat winBonus = (unWinNum > 7) ? 0 : 95 * (unWinNum - 3);
-                CGFloat principal = (unWinNum > 7) ? 750 : (50 * (pow(2, (unWinNum-3))-1));
+                CGFloat winBonus = (unWinNum > 7) ? 0 : 95 * count0;
+                CGFloat principal = (unWinNum > 7) ? 750 : (50 * count1);
                 
                 bonus = winBonus - principal;
             }
