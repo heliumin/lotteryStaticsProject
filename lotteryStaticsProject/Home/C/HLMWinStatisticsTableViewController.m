@@ -30,6 +30,17 @@ static NSString *identifier = @"cell";
     
     [self.tableView registerNib:[UINib nibWithNibName:@"HLMWinStatisticsTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:identifier];
     
+    
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    id token = [center addObserverForName:@""
+                        object:nil
+                         queue:nil
+                    usingBlock:^(NSNotification * _Nonnull note) {
+                    
+                    }];
+    [center removeObserver:token];
+    
+    
 //    添加通知
     [self addNotifications];
     

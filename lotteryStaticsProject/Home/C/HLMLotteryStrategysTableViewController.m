@@ -9,6 +9,7 @@
 #import "HLMLotteryStrategysTableViewController.h"
 #import "HLMLotteryStrategysModel.h"
 #import "HLMLotteryStrategysTableViewCell.h"
+#import "QTButtonEvent.h"
 
 static NSString *identifier = @"cell";
 
@@ -19,6 +20,11 @@ static NSString *identifier = @"cell";
 @end
 
 @implementation HLMLotteryStrategysTableViewController
+
+- (void)dealloc
+{
+    NSLog(@"%@----销毁了",self);
+}
 
 - (void)viewDidLoad {
     
@@ -40,6 +46,40 @@ static NSString *identifier = @"cell";
         [data addObject:mode];
     }];
     self.dataArr =[NSArray arrayWithArray:data];
+    [self.tableView reloadData];
+    
+    self.navigationItem.rightBarButtonItems = @[[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addWinRecordAction)]];
+    
+    self.tableView.estimatedRowHeight = 0;
+    self.tableView.estimatedSectionFooterHeight = 0;
+    self.tableView.estimatedSectionHeaderHeight = 0;
+    
+    
+    [QTSub(self, QTButtonEvent) next:^(QTButtonEvent *event) {
+        
+        NSLog(@"%@",event.name);
+    }];
+}
+
+- (void)addWinRecordAction{
+    
+    NSLog(@"ReloadDta");
+    
+    NSBundle *bundle =[NSBundle mainBundle];
+    NSString *plistStr =[bundle pathForResource:@"LotteryStrategys" ofType:@"plist"];
+    NSArray *plistArr =[[NSArray alloc]initWithContentsOfFile:plistStr];
+    
+    NSMutableArray *data =[NSMutableArray arrayWithArray:self.dataArr];
+    [plistArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        NSDictionary *dic = (NSDictionary *)obj;
+        
+        HLMLotteryStrategysModel *mode = [HLMLotteryStrategysModel mj_objectWithKeyValues:dic];
+        
+        [data addObject:mode];
+    }];
+    self.dataArr =[NSArray arrayWithArray:data];
+    
     [self.tableView reloadData];
 }
 
@@ -73,6 +113,12 @@ static NSString *identifier = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    QTButtonEvent *buttonEvent = [[QTButtonEvent alloc]init];
+    buttonEvent.name = [NSString stringWithFormat:@"第%@行被点击了",@(indexPath.row)];
+    [QTEventBus.shared dispatch:buttonEvent];
+    
+    return;
 }
 
 /*

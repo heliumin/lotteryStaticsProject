@@ -29,6 +29,7 @@
     [self.view addSubview:self.tableView];
     
     self.tableView.whc_LeftSpace(0).whc_TopSpace(0).whc_BottomSpace(0).whc_RightSpace(0);
+   
 }
 
 #pragma mark - UITableViewDataSource

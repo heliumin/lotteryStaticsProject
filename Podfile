@@ -19,6 +19,15 @@ target 'lotteryStaticsProject' do
   pod 'MWPhotoBrowser'
   pod 'PDTSimpleCalendar'
   pod 'UITableView+FDTemplateLayoutCell'
+ 
+  #消息总线：
+  pod 'QTEventBus'
+
+  #AppDelegate解耦：
+  pod 'QTEventBus/AppModule'
+
+  #基于响应链的事件传递：
+  pod 'QTEventBus/UIKit'
 
   target 'lotteryStaticsProjectTests' do
     inherit! :search_paths
