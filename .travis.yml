@@ -1,0 +1,2 @@
+language: objective-C
+osx_image: xcode9
