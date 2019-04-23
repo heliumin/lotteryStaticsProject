@@ -783,8 +783,10 @@
 			baseConfigurationReference = CED264E712B531713B21306B /* Pods-lotteryStaticsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZQ824MN553;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N965Z2D83Z;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = lotteryStaticsProject/lotteryStaticsProject_PrefixHeader.pch;
 				INFOPLIST_FILE = lotteryStaticsProject/Info.plist;
@@ -794,6 +796,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HLM.lotteryStaticsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = XC;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -803,8 +806,9 @@
 			baseConfigurationReference = A9E3EC830D0160D562860332 /* Pods-lotteryStaticsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZQ824MN553;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = N965Z2D83Z;
+				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = lotteryStaticsProject/lotteryStaticsProject_PrefixHeader.pch;
 				INFOPLIST_FILE = lotteryStaticsProject/Info.plist;
@@ -814,6 +818,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = HLM.lotteryStaticsProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "hjh-wild-development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
