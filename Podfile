@@ -12,7 +12,26 @@ target 'lotteryStaticsProject' do
   pod 'WMPageController'
   pod 'MJExtension'
   pod 'WHC_AutoLayoutKit'
+ # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for lotteryStaticsProject
+
+  pod 'FMDB'
+  pod 'IQKeyboardManager'
+  pod 'WMPageController'
+  pod 'MJExtension'
+  pod 'WHC_AutoLayoutKit'
   pod 'MBProgressHUD'
+  pod 'SDWebImage'
+  pod 'AFNetworking'
+  pod 'DateTools'
+  pod 'MWPhotoBrowser'
+  pod 'PDTSimpleCalendar'
+  pod 'UITableView+FDTemplateLayoutCell'
+
+  #消息总线：
+-- INSERT --  pod 'MBProgressHUD'
   pod 'SDWebImage'
   pod 'AFNetworking'
   pod 'DateTools'
@@ -40,3 +59,10 @@ target 'lotteryStaticsProject' do
   end
 
 end
+
+target 'lotteryStaticsProject_Dev' do
+
+
+
+end
+
